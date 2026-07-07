@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Fit and Object Cover</title>
+    <style>
+      .container {
+        height: 420px;
+        width: 426px;
+        border: 2px solid black;
+        /* background-color: azure; */
+        background-image: url(cow.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-clip: padding-box;
+      }
+      img {
+        width: 426px;
+        height: 420px;
+        /* object-fit: cover; */
+        /* object-fit: contain; */
+        /* object-fit: fill;*/
+        /* object-position: 10px 20px; */
+        /* object-position: top right;  */
+        /* object-fit:scale-down; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <img src="cow.jpg" alt=""> -->
+    </div>
+  </body>
+</html>

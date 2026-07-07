@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Property</title>
+    <style>
+      .container {
+        background-color: rgb(133, 133, 133);
+        width: 30vw;
+        height: 80vh;
+      }
+      .box {
+        width: 45px;
+        height: 40px;
+
+        /* animation-name: MudAnimation;
+        animation-duration: 2s;
+        animation-iteration-count: 3;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-direction: reverse;
+        animation-direction: alternate;
+        animation-direction: alternate-reverse; 
+        animation-play-state: paused; 
+        animation-fill-mode: forwards;*/
+        animation:MudAnimation 3s ease-in-out 1s 1 forwards,mudasir 3s ease-in-out 3s 1;
+      }
+      @keyframes MudAnimation {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: yellow;
+          transform: translate(1000px);
+        }
+      }
+      @keyframes mudasir {
+        0% {
+          transform: rotate(100deg);
+        }
+        20% {
+          transform: rotate(200deg);
+        }
+        50% {
+          transform: rotate(220deg);
+        }
+        80% {
+          transform: rotate(300deg);
+        }
+        100% {
+          transform: rotate(310deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Box</div>
+    </div>
+  </body>
+</html>
