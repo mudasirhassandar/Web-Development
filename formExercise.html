@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noor Library</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      border: 2px solid black;
+      width: 60vw;
+      margin-left: 250px;
+    }
+    .header {
+      text-align: center;
+      font-size: x-large;
+      line-height: 50px;
+      position: relative;
+    }
+    .header > h1 {
+      color: red;
+    }
+    .header > :nth-child(3) {
+      color: red;
+    }
+    .photo {
+      
+     position: absolute;
+    width: 180px;
+    height: 160px;
+    border: 2px dashed black;
+    margin-left: 325px;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    }
+    .form1 {
+      display: inline-block;
+      font-size: large;
+      font-weight: bold;
+      color: red;
+      margin-left: 10px;
+      margin-top: 200px;
+    }
+    #membershipnumber {
+      width: 220px;
+      padding: 5px;
+    }
+    #membershipnumber::placeholder {
+      color: red;
+    }
+    .Qualification {
+      font-size: large;
+      font-weight: bold;
+      color: red;
+      margin-left: 10px;
+      margin-top: 30px;
+    }
+    .checkboxes {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 10px;
+      gap: 40px;
+      margin-top: 10px;
+    }
+    .option {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    #username {
+      width: 200px;
+      padding: 5px;
+    }
+    .details {
+      margin-left: 10px;
+      margin-top: 50px;
+      font-size: large;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      row-gap: 2px;
+    }
+    .button {
+      display: block;
+      margin: 50px auto;
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .conditions {
+      font-weight: bold;
+      margin-left: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h4>Membership Form</h4>
+        <h1>NOOR LIBRARY</h1>
+        <h4>NEAR BAZARI MASJID TRAL</h4>
+        <h5>9541091247, 9622819224</h5>
+        <div class="photo">
+  <label for="photo"><strong>Upload Photo</strong></label><br><br>
+  <input
+    type="file"
+    id="photo"
+    name="photo"
+    accept="image/*"
+    required
+  >
+</div>
+      </div>
+      <div>
+        <form method="post">
+          <label class="form1" for="membershipnumber"
+            >Enter Membership No.</label
+          >
+          <input
+            type="text"
+            required
+            id="membershipnumber"
+            name="membershipnumber"
+            placeholder="Enter your Membership number"
+          />
+
+          <div>
+            <h4 class="Qualification">Qualification:</h4>
+            <div class="checkboxes">
+              <div class="option">
+                <label for="phd">Ph.D.</label>
+                <input type="checkbox" id="phd" name="phd" value="yes" />
+              </div>
+              <div class="option">
+                <label for="mphil">M.Phil.</label>
+                <input type="checkbox" id="mphil" name="pg" value="yes" />
+              </div>
+              <div class="option">
+                <label for="pg">P.G</label>
+                <input type="checkbox" id="pg" name="pg" value="yes" />
+              </div>
+              <div class="option">
+                <label for="graduate">Graduate</label>
+                <input
+                  type="checkbox"
+                  id="graduate"
+                  name="graduate"
+                  value="yes"
+                />
+              </div>
+              <div class="option">
+                <label for="ug">Undergraduate</label>
+                <input type="checkbox" id="ug" name="ug" value="yes" />
+              </div>
+              <div class="option">
+                <label for="upsc">UPSC/IAS</label>
+                <input type="checkbox" id="upsc" name="upsc" value="yes" />
+              </div>
+              <div class="option">
+                <label for="kas">PSC/KAS</label>
+                <input type="checkbox" id="kas" name="kas" value="yes" />
+              </div>
+              <div class="option">
+                <label for="net">NET/SET</label>
+                <input type="checkbox" id="net" name="net" value="yes" />
+              </div>
+              <div class="option">
+                <label for="neet">NEET</label>
+                <input type="checkbox" id="neet" name="neet" value="yes" />
+              </div>
+              <div class="option">
+                <label for="jee">JEE/GATE</label>
+                <input type="checkbox" id="jee" name="jee" value="yes" />
+              </div>
+              <div class="option">
+                <label for="ssb">SSB</label>
+                <input type="checkbox" id="ssb" name="ssb" value="yes" />
+              </div>
+              <div class="option">
+                <label for="other">Other</label>
+                <input
+                  type="text"
+                  id="other"
+                  name="other"
+                  placeholder="Enter Qualification"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="details">
+            <label for="username">Enter Name:</label>
+            <input
+              type="text"
+              required
+              id="username"
+              name="username"
+              placeholder="Enter Your Name"
+            />
+          </div>
+          <div class="details">
+            <label for="guardianname"
+              >Father's/ Mother's/ Guardian's Name:</label
+            >
+            <input
+              type="text"
+              required
+              id="guardianname"
+              name="guardianname"
+              placeholder="Enter Your Father's/ Mother's/ Guardian's Name"
+            />
+          </div>
+          <div class="details">
+            <label for="address">Permanent Address:</label>
+            <input
+              type="text"
+              required
+              id="address"
+              name="address"
+              placeholder="Enter Your Address"
+            />
+          </div>
+          <div class="details">
+            <label for="landmark">Landmark:</label>
+            <input
+              type="text"
+              required
+              id="landmark"
+              name="landmark"
+              placeholder="Enter Your Landmark"
+            />
+          </div>
+          <div class="footer">
+            <div class="details">
+              <label for="district">District:</label>
+              <input
+                type="text"
+                required
+                id="district"
+                name="district"
+                placeholder="Enter Your District"
+              />
+            </div>
+            <div class="details">
+              <label for="pin">PIN:</label>
+              <input
+                type="text"
+                required
+                id="pin"
+                name="pin"
+                placeholder="Enter Your Pin Code"
+              />
+            </div>
+            <div class="details">
+              <label for="phonenumber">Phone Number:</label>
+              <input
+                type="text"
+                required
+                id="phonenumber"
+                name="phonenumber"
+                placeholder="Enter Your Number"
+              />
+            </div>
+            <div class="details">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                required
+                id="email"
+                name="email"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <div class="details">
+              <label for="aadharnumber">Aadhar No:</label>
+              <input
+                type="text"
+                required
+                id="aadharnumber"
+                name="aadharnumber"
+                placeholder="Enter Your Aadhar Number"
+              />
+            </div>
+            <div class="details">
+              <label for="bloodgroup">Blood Group:</label>
+              <input
+                type="text"
+                required
+                id="bloodgroup"
+                name="bloodgroup"
+                placeholder="Enter Your blood Group"
+              />
+            </div>
+          </div>
+          <div class="conditions">
+            <label for="condition"></label>
+              I request that I may be granted membership of the library. I am
+              not involved in any unlawful or criminal activity. I have read and
+              understood the rules and regulations of the library and promise to
+              abide by them. I shall inform the library of any change in my
+              address. I shall be responsible for any damage caused to the
+              library property by me. I shall not object if my membership is
+              cancelled by the library at any time for violating its rules and
+              regulations. I hereby declare that the information provided by me
+              is true and correct to the best of my knowledge, and that nothing
+              has been concealed.
+            </label>
+            <input
+              type="checkbox"
+              required
+              id="condition"
+              name="condition"
+              value="yes"
+            />
+          </div>
+          <div>
+            <button class="button" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div></div>
+    </div>
+  </body>
+</html>

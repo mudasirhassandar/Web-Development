@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css filters</title>
+    <style>
+      img {
+        width: 350px;
+        /* filter: blur(1px); */
+      }
+      .img1 {
+        /* filter: grayscale(100%); */
+        filter: sepia(50%);
+      }
+      .img2 {
+        /* filter: brightness(150%); */
+        /* filter: hue-rotate(50deg); */
+        /* filter: invert(1); */
+        filter: opacity(1);
+      }
+      .img3 {
+        filter: contrast(110%);
+        filter: drop-shadow(16px 16px 20 red);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="img1" src="cow.jpg" alt="" />
+      <img
+        class="img2"
+        src="https://w0.peakpx.com/wallpaper/394/252/HD-wallpaper-shahrukh-khan-srk-actor-hero.jpg"
+        alt=""
+      />
+      <img class="img3" src="image2.png" alt="" />
+    </div>
+  </body>
+</html>
