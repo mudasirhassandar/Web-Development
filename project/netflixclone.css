@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.nav1 {
+  width: 100vw;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: var(
+    --offer,
+    linear-gradient(
+      90deg,
+      var(--Violet-violet-600, #5c32bf) 0%,
+      var(--Violet-violet-600, #5c32bf) 20%,
+      var(--Red-red-500, #e50914) 100%
+    )
+  );
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.main {
+  background-image: url("assets/images/netflix\ bg.jpg");
+  height: 100vh;
+  position: relative;
+  background-position: center center;
+  background-size: max(1000px, 100vw);
+  background-repeat: no-repeat;
+}
+.main .box {
+  height: 100vh;
+  background-color: black;
+  opacity: 0.85;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+nav {
+  max-width: 75vw;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  padding: 25px;
+  position: relative;
+  top: 50px;
+  z-index: 1;
+}
+.navbutton {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+.navbutton1 {
+  width: 130px;
+  background: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  height: 30px;
+  font-weight: bold;
+}
+.navbutton2 {
+  background: red;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 100px;
+}
+.content {
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  font-size: 50px;
+  font-weight: bold;
+}
+.content > p {
+  font-size: large;
+  margin: auto;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.subs {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+input {
+  width: 220px;
+  height: 50px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+#email::placeholder {
+  font-weight: bold;
+  padding-left: 10px;
+  font-size: larger;
+}
+.button3 {
+  background: red;
+  width: 220px;
+  height: 50px;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+}
+.line {
+  color: white;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 20px;
+}
