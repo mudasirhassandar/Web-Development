@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // create a game where you start with any random game number .
+      // ask the user to keep guessing the game number until the user enters the correct value
+      let gamenumber = 7;
+      let usernumber = prompt("Enter the Game Number");
+
+      while (gamenumber != usernumber) {
+        usernumber = prompt("You Enterd Wrong Number. Guess Again");
+      }
+      console.log("Congratulatins Your Entered a correct number");
+    </script>
+  </body>
+</html>
